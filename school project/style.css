@@ -19,3 +19,21 @@
     	.img-marg {
     		padding-top: 50px;
     	}
+
+        .header-logo span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: #abd6cf;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 3px;
+    box-shadow: 12px 6px #abd6cf, 24px 0px #abd6cf, 36px 6px #abd6cf;
+    transition: .4s linear;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
