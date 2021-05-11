@@ -1,0 +1,21 @@
+.mainMenu li {
+    		display: inline-block;
+    		vertical-align: top;
+    		}
+       	.pad {
+       		margin-right: 800px;
+    		text-align: right;
+    	}
+    	.pad2 {
+    		margin-left: 150px;
+    		margin-top: 60px;
+    	}
+    	.fpad {
+    		margin-top: 700px;
+    	}
+    	.footer {
+
+    	}
+    	.img-marg {
+    		padding-top: 50px;
+    	}
