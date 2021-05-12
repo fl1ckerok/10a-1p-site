@@ -46,4 +46,5 @@
 .card {
 	margin-left: 60px;
 	margin-top: 40px;
+	display: inline-block;
 }
