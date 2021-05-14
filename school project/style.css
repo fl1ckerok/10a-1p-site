@@ -12,7 +12,7 @@
     		font-size: 36px;
     	}
     	.fpad {
-    		margin-bottom: 87px;
+    		margin-bottom: 10px;
     	}
     	.img-marg {
     		padding-top: 50px;
@@ -36,6 +36,7 @@
 }
 .int-foot {
 	margin-left: 20px;
+	margin-bottom: 20px;
 }
 .btm {
 	margin-right: 40px;
