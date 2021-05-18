@@ -1,0 +1,11 @@
+.greeting {
+	background-color: white;
+	border: 1px outset black;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.text {
+}
