@@ -16,3 +16,20 @@
 	margin-top: 20px;
 	font-size: 24px;
 }
+.dtitle {
+	text-align: center;
+}
+.dblock {
+	background-color: white;
+}
+.bblock1 {
+	width: 250px;
+	border: 2px double black;
+	text-align: center;
+}
+.bimg {
+	border: 1px outset black;
+}
+.bblock {
+	margin-left: 30%;
+}
