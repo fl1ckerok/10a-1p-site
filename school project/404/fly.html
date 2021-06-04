@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fly!</title>
+</head>
+<body>
+<center>
+	<h1>Fly!</h1>
+	<h6>Warn! If you reload this page, all your saves will be deleted</h6>
+	    <script type="text/javascript">
+    		var clicks = parseInt( localStorage.getItem("clicks") || 0 );
+    		var sc =  parseInt( localStorage.getItem("sc") || 1 ); 
+    		function MyClick() {
+        		clicks = clicks + sc;
+        		document.getElementById("clicks").innerHTML = clicks;
+        		    localStorage.setItem("clicks", clicks) 
+    			};
+    		function BuyItem() {
+    			var price = 100;
+    			document.getElementById(clicks)
+    			if (clicks >= price) {
+    				clicks = clicks - price;
+    				document.getElementById("clicks").innerHTML = clicks;
+    				localStorage.setItem("clicks", clicks);
+    				sc = sc + 1;
+    				document.getElementById("sc").innerHTML = sc;
+    				localStorage.setItem("sc", sc)
+    			}
+    			else alert("You haven't enough clicks to buy that")
+    		}
+    	   		function BuyItem1() {
+    			var price = 20000;
+    			document.getElementById(clicks)
+    			if (clicks >= price) {
+    				clicks = clicks - price;
+    				document.getElementById("clicks").innerHTML = clicks;
+    				localStorage.setItem("clicks", clicks);
+    				sc = sc + 1000;
+    				document.getElementById("sc").innerHTML = sc;
+    				localStorage.setItem("sc", sc)
+    			}
+    			else alert("You haven't enough clicks to buy that")
+    		}
+    		function BuyFly() {
+    			var price1 = 1000000;
+    			if (clicks >= price1) {
+    				clicks = clicks - price1;
+    				var link = document.createElement('a');
+					link.setAttribute('href','flyEE.html');
+					link.setAttribute('download','download');
+					onload=link.click();
+    			}
+    			else alert("You haven't enough clicks to buy that")
+    		}
+		</script>
+	<img src="../fly.png" onClick="MyClick()">
+	<p>Clicks: <a id="clicks">0</a></p>
+	<p style="margin-left: -60%">Clicks per click: <a id="sc"></a></p>
+	<p>Shop!</p>
+	<p style="display: inline-block">Click: +1.</p>
+	<p style="display: inline-block">Price: 100 clicks.</p>
+	<button style="display: inline-block" onclick="BuyItem()">Buy!</button><br />
+	<p style="display: inline-block">Click: +1000.</p>
+	<p style="display: inline-block">Price: 20000 clicks.</p>
+	<button style="display: inline-block" onclick="BuyItem1()">Buy!</button><br />
+	<p style="display: inline-block">Buy another easteregg 0_o.</p>
+	<p style="display: inline-block">Price: 1.000.000 clicks.</p>
+	<button style="display: inline-block" onclick="BuyFly()">Buy!</button>
+</center>
+</body>
+</html>
