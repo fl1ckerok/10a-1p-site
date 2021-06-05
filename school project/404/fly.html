@@ -6,15 +6,16 @@
 <body>
 <center>
 	<h1>Fly!</h1>
-	<h6>Warn! If you reload this page, all your saves will be deleted</h6>
+    <button onclick="delProg()" style="margin-left: 90%;">Reset progress</button>
 	    <script type="text/javascript">
     		var clicks = parseInt( localStorage.getItem("clicks") || 0 );
     		var sc =  parseInt( localStorage.getItem("sc") || 1 ); 
     		function MyClick() {
         		clicks = clicks + sc;
         		document.getElementById("clicks").innerHTML = clicks;
-        		    localStorage.setItem("clicks", clicks) 
-    			};
+        		    localStorage.setItem("clicks", clicks);
+                    document.getElementById("sc").innerHTML = sc; 
+    			}
     		function BuyItem() {
     			var price = 100;
     			document.getElementById(clicks)
@@ -52,10 +53,18 @@
     			}
     			else alert("You haven't enough clicks to buy that")
     		}
+            function delProg() {
+                if (window.confirm("Do you want to reset all your progress?")) {
+                localStorage.removeItem("clicks", clicks);
+                localStorage.removeItem("sc", sc);
+                location.reload();                    
+                }
+
+            }
 		</script>
 	<img src="../fly.png" onClick="MyClick()">
 	<p>Clicks: <a id="clicks">0</a></p>
-	<p style="margin-left: -60%">Clicks per click: <a id="sc"></a></p>
+	<p style="margin-left: -60%">Clicks per click: <a id="sc">0</a></p>
 	<p>Shop!</p>
 	<p style="display: inline-block">Click: +1.</p>
 	<p style="display: inline-block">Price: 100 clicks.</p>
