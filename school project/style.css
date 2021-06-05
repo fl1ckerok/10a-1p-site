@@ -1,3 +1,19 @@
+*{
+    cursor: url(Cursor/small1-h.png), default;
+}
+
+a {
+    cursor: pointer;
+}
+
+.cursor-active {
+    cursor: pointer;
+}
+
+.button {
+    cursor: pointer;
+}
+
 .mainMenu li {
     		display: inline-block;
     		vertical-align: top;
