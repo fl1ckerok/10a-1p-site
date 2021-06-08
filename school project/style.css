@@ -45,8 +45,17 @@ a {
 	background-color: #343a40;
 	color: white;
 }
+
+.cd {
+    color: white;
+
+}
+
+.cd:hover {
+    color: white
+}
+
 .rights {
-	margin-left: 25px;
 	font-size: 14px;
 }
 .int-foot {
