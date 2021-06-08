@@ -39,7 +39,7 @@
 
 <!-- Button trigger modal -->
 <h3 class="text-white nav-link btm" data-toggle="modal" data-target="#exampleModal">
-  Новини класу
+  version 1.7.2
 </h3>
 
 <!-- Modal -->
@@ -47,13 +47,16 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Новини (News)</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Update changelog - v 1.7.2 (07.06.2021)</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>- Сторінка "Палій Сергій" функціонує</p>
+        <p>- Фікси на сторінці "Стельмах Христина"</p>
+        <p>- Сторінка шукачів пасхалок (в самому низу)</p>
+        <p>- Замість "Новин класу" на головній - поточна версія зі списком змін</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
@@ -200,12 +203,46 @@
     <div class="footer">
     	<hr class="fpad">
       <center>
-       	<p class="int-foot" style="display: inline-block"><img src="ic_i_a.png" height="36px"> Інстаграм: <span class=""><br>@rostsky<br>@vityadm<br>@_enthusiastic_person_</span></p>
-    	<p class="int-foot" style="display: inline-block"><img src="ic_t_a.png" height="36px"> Телеграм: <span class=""><br>@prod<br>@IAMAVASYA<br>@Pocht12</span></p>
-      <h6 style="font-size: 10px; margin-top: -1%"><a href="changelog.html">changelog</a> </h6>
+      <div> 
+        <p class="int-foot" style="display: inline-block"><img src="ic_i_a.png" height="36px"> Інстаграм: <span class=""><br>@rostsky<br>@vityadm<br>@_enthusiastic_person_</span></p>
+    	  <p class="int-foot" style="display: inline-block"><img src="ic_t_a.png" height="36px"> Телеграм: <span class=""><br>@prod<br>@IAMAVASYA<br>@Pocht12</span></p>
+      </div>
+      <div style="margin-top: -1.5%">
+        <h6 style="font-size: 10px; display: inline-block;"><a href="changelog.html">changelog</a></h6>
+        <p style="font-size: 10px; display: inline-block;"> | </p>
+        <h6 style="font-size: 10px; display: inline-block;"><a href="seekers.html">Шукачі EE</a></h6>
+      </div>
     	<p class="rights">© 2021. All rights reserved.</p>
       </center>
-    	<marquee class="mrq" behavior='scroll' direction='right' scrollamount='50'>Groove!</marquee>
+
+      <script>
+        function eeG() {
+          alert("Ти стільки клацав, що натрапив на мене?");
+          alert("Ти так сильно хочеш медальку?")
+          alert("Потерпи, ще трішки");
+        }
+      </script>
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5; margin-left: 81%; margin-top: 40%">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false">
+    <div class="toast-header">
+      <img src="../egg.png" height="20px" class="rounded me-2" alt="...">
+      <strong style="margin-left: 5%" class="me-auto">EE manager</strong>
+      <small style="margin-left: 24%">now</small>
+      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    <div class="toast-body">
+      Вітаю, ви знайшли секрет!
+    </div>
+  </div>
+</div>
+
+
+
+
+    	<marquee class="mrq" behavior='scroll' direction='right' scrollamount='50' onclick="eeG()">Groove!</marquee>
     </div>
   </body>
 </html>
